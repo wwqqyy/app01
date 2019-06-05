@@ -52,6 +52,7 @@ public class CourseController {
     @GetMapping("query")
     public Message query(Course course){
         List<Course> list=courseService.query(course);
+        System.out.println();
         return MessageUtil.success("success",list);
     }
 
